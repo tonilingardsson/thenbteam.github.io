@@ -59,7 +59,7 @@ Technologies I used in the project
   - MySQL
   - JSON
 
-Other info:
+Additional info:
   - My second child was born in the beginning of the group assignment
 
 Josephine
