@@ -47,7 +47,19 @@ Technologies I used in the project
   - JSON
 
 
-Toni
+Toni Lingårdsson Luna
+  - https://www.linkedin.com/in/antonio-ling%C3%A5rdsson-0787a1129/
+  - Webbutveckling inom e-handel, Medieinstitutet (front-end & back-end)
 
+Responsibilities in the project:
+  - Back end
+
+Technologies I used in the project
+  - PHP
+  - MySQL
+  - JSON
+
+Other info:
+  - My second child was born in the beginning of the group assignment
 
 Josephine
