@@ -1,0 +1,208 @@
+a{
+  color: #777;
+}
+a:focus{
+  outline:0;
+}
+.carouselholder{
+  width:100%;
+  padding: 30px;
+  margin-top: 30px;
+}
+.right.carousel-control, .left.carousel-control {
+    display: none;
+}
+.below_carousel{
+  width: 100%;
+  height: 2px;
+  background-color: #e7e7e7;
+  border-radius: 3px;
+  margin-top: 50px;
+}
+.navbar {
+    margin-bottom: 0px;
+    background: rgba(248,248,248,0.9);
+    min-height: 60px;
+}
+.about{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.photagraphers{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+ul {
+  list-style-type: none;
+}
+.search{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.searchResults{
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+.one{
+  margin-top: 5px;
+}
+.two{
+  margin-top: 5px;
+}
+.three{
+  margin-top: 5px;
+}
+.four{
+  margin-top: 5px;
+}
+.one:hover ~ hr {
+  margin-left: 3%;
+  opacity: 1;
+  width: 30%;
+}
+.two:hover ~ hr {
+  margin-left: 37%;
+  opacity: 1;
+  width: 30%;
+}
+.three:hover ~ hr {
+  margin-left: 71%;
+  opacity: 1;
+  width: 26%;
+}
+hr {
+  height: .25rem;
+  width: 20%;
+  margin: 0;
+  background: #777;
+  border: none;
+  transition: .3s ease-in-out;
+  opacity: 0;
+}
+
+.photographerName{
+  padding-left: 20px;
+}
+.photographerPicture{
+  margin-left: 20px;
+  width: 100%;
+}
+.photographerPicture img{
+  border-radius: 50%;
+}
+.photographerInfo{
+  width: 100%;
+  padding-top: 20px;
+}
+.portfolioPicture{
+  height: 150px;
+  width: 150px;
+  margin-top: 20px;
+  background-color: yellow;
+}
+.photographerDetails{
+  list-style-type: none;
+  font-weight: bold;
+  color: #777;
+}
+.photographerDetails li{
+  min-width: 250px;
+}
+.photographerFreeText{
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.portfolioContainer {
+  margin-top: 20px;
+  padding: .5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+}
+.portfolioContainer div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 200px;
+  margin: .5vw;
+}
+.portfolioContainer div img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 400px) {
+  .portfolioContainer div { margin: 0; }
+  .portfolioContainer { padding: 0; }
+
+}
+.searchResults ol{
+  margin-left: 0px !important;
+  padding-left: 0px !important;
+  padding-top: 10px;
+}
+.table{
+  margin-bottom: 0px;
+}
+tbody{
+  margin-left: 30px;
+}
+.textAlignCenter{
+  text-align: center;
+}
+.textAlignRight{
+  text-align: right;
+}
+.signedInAsWrapper{
+  width: 100%;
+  display: block; /* Ändra till none och använd toggle*/
+  margin-right: 15px;
+  padding: 15px;
+  text-align: right;
+}
+.signInMenu{
+  display: none;
+}
+.signOutMenu{
+  display: none;
+}

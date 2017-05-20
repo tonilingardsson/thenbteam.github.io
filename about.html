@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Newbie</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-default "> <!-- navbar-fixed-top -->
+    <div class="container-fluid">
+
+      <!-- Logo -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand"><img src="img/logo-header.png"></a> <!-- <img src="img/logo-header.jpg"> -->
+      </div>
+
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse" id="mainNavBar">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="one"><a href="about.html">Om Newbie</a></li>
+          <li class="two"><a href="photagraphers.html">Fotografer</a></li>
+          <li class="three signInMenu"><a href="" data-toggle="modal" data-target="#signInWindow">Logga In</a></li>
+          <li class="three signOutMenu"><a href="" class="signOutButton">Logga Ut</a></li>
+          <hr class="menuUnderline"/>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Log In form -->
+  <div class="modal fade" id="signInWindow">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Logga In</h3>
+        </div>
+
+        <!-- body (form) -->
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <input type="email" class="form-control emailSignIn" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control passwordSignIn" placeholder="Lösenord">
+            </div>
+          </form>
+          <div class="login-help">
+					       <a href="" data-toggle="modal" data-target="#registerWindow">Registrera</a> - <a href="" data-toggle="modal" data-target="#recoverPasswordWindow" align="right">Glömt Lösenord</a>
+				  </div>
+          </div>
+
+          <!-- button -->
+          <div class="modal-footer">
+          <button class="btn btn primary btn-block" id="logInButton">Logga In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recover password form -->
+  <div class="modal fade" id="recoverPasswordWindow">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Glömt Lösenord</h3>
+        </div>
+
+        <!-- body (form) -->
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <input type="email" class="form-control emailRecover" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+            </div>
+          </form>
+          </div>
+
+          <!-- button -->
+          <div class="modal-footer">
+          <button class="btn btn primary btn-block" id="recoverPasswordButton">Återställ Lösenord</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Register Form -->
+  <div class="modal fade" id="registerWindow">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Registrera</h3>
+        </div>
+
+        <!-- body (form) -->
+        <div class="modal-body">
+
+          <form role="form" class="registrationForm">
+            <div class="form-group">
+              <input type="text"  class="form-control first_name" placeholder="Förnamn">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control last_name" placeholder="Efternamn">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control company" placeholder="Företag">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control password1" placeholder="Lösenord">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control password2" placeholder="Upprepa Lösenord">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control city" placeholder="Stad">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control website" placeholder="Hemsida">
+            </div>
+          </form>
+
+          </div>
+
+          <!-- button -->
+          <div class="modal-footer">
+          <button class="btn btn primary btn-block" id="registerConfirmButton">Bekräfta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Edit user -->
+  <div class="modal fade" id="editUserWindow">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Redigera användare</h3>
+        </div>
+
+        <!-- body (form) -->
+        <div class="modal-body">
+
+          <form role="form" class="editUserForm">
+            <div class="form-group">
+              <label for="updateFirstName">Förnamn</label>
+              <input type="text"  class="form-control updateFirstName" placeholder="Förnamn">
+            </div>
+
+            <div class="form-group">
+              <label for="updateLastName">Efternamn</label>
+              <input type="text" class="form-control updateLastName" placeholder="Efternamn">
+            </div>
+
+            <div class="form-group">
+              <label for="updateCompany">Företag</label>
+              <input type="text" class="form-control updateCompany" placeholder="Företag">
+            </div>
+
+            <div class="form-group">
+              <label for="updateEmail">Email</label>
+              <input type="email" class="form-control updateEmail" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+            </div>
+
+            <div class="form-group">
+              <label for="updateCity">Stad</label>
+              <input type="text" class="form-control updateCity" placeholder="Stad">
+            </div>
+
+            <div class="form-group">
+              <label for="updateWebsite">Hemsida (utan http://)</label>
+              <input type="text" class="form-control updateWebsite" placeholder="Hemsida">
+            </div>
+
+            <div class="form-group">
+              <label for="updateBio">Biografi</label>
+              <input type="text" class="form-control updateBio" placeholder="Biografi">
+            </div>
+
+            <div class="form-group">
+              <label for="updateProfilePicture">Profilbild (url)</label>
+              <input type="text" class="form-control updateProfilePicture" placeholder="Profilbild">
+            </div>
+
+            <div class="form-group">
+              <label for="updatePicture1">Bild 1 (url)</label>
+              <input type="text" class="form-control updatePicture1" placeholder="Bild 1">
+            </div>
+
+            <div class="form-group">
+              <label for="updatePicture2">Bild 2 (url)</label>
+              <input type="text" class="form-control updatePicture2" placeholder="Bild 2">
+            </div>
+
+            <div class="form-group">
+              <label for="updatePicture3">Bild 3 (url)</label>
+              <input type="text" class="form-control updatePicture3" placeholder="Bild 3">
+            </div>
+
+            <div class="form-group">
+              <label for="updatePicture4">Bild 4 (url)</label>
+              <input type="text" class="form-control updatePicture4" placeholder="Bild 4">
+            </div>
+
+            <div class="form-group">
+              <label for="updatePicture5">Bild 5 (url)</label>
+              <input type="text" class="form-control updatePicture5" placeholder="Bild 5">
+            </div>
+          </form>
+
+          </div>
+
+          <!-- button -->
+          <div class="modal-footer">
+            <button class="btn btn primary btn-block" data-toggle="modal" data-target="#deleteWindow">Radera användare</button>
+            <button class="btn btn primary btn-block" id="updateUserButton">Uppdatera användare</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Delete user -->
+  <div class="modal fade" id="deleteWindow">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Radera användaren</h3>
+        </div>
+
+        <!-- body (form) -->
+        <div class="modal-body">
+          <button class="btn btn primary btn-block" id="deleteUserButton">Ja</button>
+          <button class="btn btn primary btn-block" id="updateUserButton" data-dismiss="modal">Nej</button>
+
+          </div>
+
+          <!-- button -->
+          <div class="modal-footer">
+
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Below header-->
+  <div class="signedInAsWrapper"><a class="signedInAs" href="" onclick="editUser()" data-toggle="modal" data-target="#editUserWindow"></a></div>
+
+
+
+  <!-- Main content -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-md-3 col-sm-12"></div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="about">
+          <h1><center>Om Newbie</center></h1>
+        </div>
+
+          <p>Denna sida har som målsättning att underlätta processen för föräldrar och andra närstående att hitta en nyföddfotograf.
+            Syftet är att samla fotografer inom newborngenren på ett och samma ställe. </p>
+
+          <p>Newbie är ett skolprojekt mellan Jensen Educations Projektledarklass och Javaklass samt Medieinstitutets webbutvecklarklass
+            inom E-handel. Projektet syftar till att bygga en responsiv webbsida som är en CRUD-applikation (Create Read Update & Delete)
+            och målsättningen är att göra detta i projektform som ska påminna om de projekt studenterna kommer att möta i framtiden.</p>
+
+            <ul>
+            <h5>Utvecklare:</h5>
+            <li>Tobias Pettersson - Frontend</li>
+            <li>Anna Gustafsson -Backend</li>
+            <li>Toni Lingardsson - Backend</li>
+            <li>Josefine Maad - projektledare</li>
+          </ul>
+
+      </div>
+      <div class="col-lg-4 col-md-43 col-sm-12"></div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="below_carousel">
+
+        </div>
+      </div>
+    </div>
+ </div>
+
+  <!--<script src="script/jquery-3.1.1.min.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="script/main.js"></script>
+</body>
+
+</html>
